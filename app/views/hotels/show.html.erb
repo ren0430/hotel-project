@@ -1,0 +1,5 @@
+<h1>ホテル詳細ページ</h1>
+<p><%= @hotel.name %></p>
+<p><%= @hotel.description %></p>
+<%= image_tag(@hotel.picture_url, width: 600) if @hotel.picture.present? %>
+<p><%= link_to 'レビューの一覧', hotel_reviews_path(@hotel) %></p>
